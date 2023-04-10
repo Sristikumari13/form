@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <style>
+      /* Style the form container */
+      .form-container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      /* Style the form fields */
+      input[type=text], input[type=email], input[type=tel], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid green;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      /* Style the radio buttons and checkboxes */
+      input[type=radio], input[type=checkbox] {
+        margin-top: 6px;
+        margin-bottom: 16px;
+      }
+      
+      /* Style the submit button */
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      /* Add a hover effect for buttons */
+      input[type=submit]:hover {
+        background-color: red;
+      }
+      
+      /* Add a red border to required input fields */
+     /* input:required {
+        border-color: red;
+      }*/
+      
+      /* Style the success message */
+      .success {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      
+      /* Style the error message */
+      .error {
+        color: red;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Student Registration Form</h2>
+      <form action="" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address" style="height:200px" required></textarea>
+        
+    <input type="submit" value="submit">
+		</body>
+		</html>
+
+
